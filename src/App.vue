@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" >
+    <tutorial/>
+    <listaCartas/>
+    <ranking/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import listaCartas from "./components/listaCartas";
+import ranking from "./components/ranking.vue";
+import tutorial from "./components/tutorial.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    listaCartas,
+    ranking,
+    tutorial
   }
-}
+};
 </script>
 
 <style>
+body {
+  font-family: helvetica;
+  background-color: #585454;
+  color: white;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
