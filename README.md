@@ -1,5 +1,3 @@
-# db1
-
 ## Project setup
 ```
 npm install
